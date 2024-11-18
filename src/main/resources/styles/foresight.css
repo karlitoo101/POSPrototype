@@ -1,0 +1,63 @@
+.paned {
+    -fx-background-radius: 10px; 
+    -fx-background-color: #fff5b4;
+}
+
+.p {
+    -fx-background-color: #ded0b8;
+}
+
+.navbar {
+	-fx-background-color: #170e00;
+}
+
+.navbar-btn {
+    -fx-background-color: #170e00;
+	-fx-text-fill: #ffcf81;
+	-fx-selected-background-color: #5c3217;
+	rippler-fill: true;
+	-fx-ripple-color: #e8c375; /*ripple colors of homepage btns*/
+}
+
+.navbar-btn:hover {
+    -fx-background-color: #5c3217;
+	-fx-ripple-color: #e8c375;
+}
+
+.navbar-icon {
+	-fx-fill: #ffcf81;
+}
+
+.awesome-icons {
+	-fx-fill: #c7b280;
+}
+
+.home-page-btn {
+	-fx-text-fill: #c7b280;
+	-fx-background-color: #170e00;
+	-fx-background-radius: 20px;
+	-fx-border-color: #c7b280;
+	-fx-border-insets: 8px;
+	-fx-border-radius: 15px;
+}
+
+.home-page-btn:hover {
+	-fx-cursor: HAND;
+	-fx-background-color: #94591c;
+}
+
+.stock-alert {
+	-fx-text-fill: #c7b280;
+	-fx-background-color: #170e00;
+	-fx-background-radius: 20px;
+	-fx-border-color: #ff0000;
+	-fx-border-insets: 8px;
+	-fx-border-radius: 15px;
+}
+
+.stock-alert:hover {
+	-fx-cursor: HAND;
+	-fx-background-color: #94591c;
+	-fx-text-fill: #000000;
+	-fx-border-width: 5px;
+}

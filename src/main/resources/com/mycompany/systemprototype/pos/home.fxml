@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToggleNode?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane minHeight="630.0" minWidth="753.0" prefHeight="677.0" prefWidth="898.0" stylesheets="@/styles/foresight.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.systemprototype.pos.HomeController">
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="p" BorderPane.alignment="CENTER">
+         <top>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="733.0" styleClass="paned" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </BorderPane.margin>
+               <children>
+                  <Label text="Business Name" wrapText="true">
+                     <font>
+                        <Font name="Source Serif Pro Semibold" size="50.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label text="Dashboard" wrapText="true">
+                     <font>
+                        <Font name="Source Serif Pro Semibold" size="50.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <GridPane prefHeight="210.0" prefWidth="878.0" styleClass="paned" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </BorderPane.margin>
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton alignment="CENTER" contentDisplay="TOP" graphicTextGap="10.0" layoutX="121.0" layoutY="84.0" prefHeight="237.0" prefWidth="293.0" ripplerFill="#e8c375" styleClass="home-page-btn" text="User Manual" textFill="#ffd900" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="20.0">
+                           <graphic>
+                              <FontAwesomeIcon fill="#ffd900" glyphName="BOOK" glyphStyle="BOOK" selectionFill="#ffd900" size="5.5em" styleClass="awesome-icons" wrappingWidth="97.0" />
+                           </graphic>
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                     <children>
+                        <JFXButton alignment="CENTER" contentDisplay="TOP" graphicTextGap="10.0" prefHeight="237.0" prefWidth="293.0" ripplerFill="#e8c375" styleClass="home-page-btn" text="Estimated Profit" textFill="#ffd900" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="20.0">
+                           <graphic>
+                              <FontAwesomeIcon fill="#ffd900" glyphName="DATABASE" glyphStyle="GE" selectionFill="#ffd900" size="5.5em" styleClass="awesome-icons" wrappingWidth="95.0" />
+                           </graphic>
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+                     <children>
+                        <JFXButton alignment="CENTER" contentDisplay="TOP" graphicTextGap="10.0" prefHeight="237.0" prefWidth="293.0" ripplerFill="#e8c375" styleClass="home-page-btn" text="Top-Grossing Products" textFill="#ffd900" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                           <graphic>
+                              <FontAwesomeIcon fill="#ffd900" glyphName="LINE_CHART" glyphStyle="BOOK" selectionFill="#ffd900" size="5.5em" styleClass="awesome-icons" wrappingWidth="120.0" />
+                           </graphic>
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                     <children>
+                        <JFXButton alignment="CENTER" contentDisplay="TOP" graphicTextGap="10.0" prefHeight="237.0" prefWidth="293.0" ripplerFill="#e8c375" styleClass="home-page-btn" text="User Manual" textFill="#ffd900" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <graphic>
+                              <FontAwesomeIcon fill="#ffd900" glyphName="BOOK" glyphStyle="BOOK" selectionFill="#ffd900" size="5.5em" styleClass="awesome-icons" wrappingWidth="128.0" />
+                           </graphic>
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <JFXButton alignment="CENTER" contentDisplay="TOP" graphicTextGap="10.0" prefHeight="237.0" prefWidth="293.0" ripplerFill="#e8c375" styleClass="home-page-btn" text="User Manual" textFill="#ffd900" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <graphic>
+                              <FontAwesomeIcon fill="#ffd900" glyphName="BOOK" glyphStyle="BOOK" selectionFill="#ffd900" size="5.5em" styleClass="awesome-icons" wrappingWidth="128.0" />
+                           </graphic>
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <children>
+                        <JFXButton alignment="CENTER" contentDisplay="TOP" graphicTextGap="10.0" prefHeight="237.0" prefWidth="293.0" ripplerFill="#e8c375" styleClass="home-page-btn" text="User Manual" textFill="#ffd900" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="10.0">
+                           <graphic>
+                              <FontAwesomeIcon fill="#ffd900" glyphName="BOOK" glyphStyle="BOOK" selectionFill="#ffd900" size="5.5em" styleClass="awesome-icons" wrappingWidth="128.0" />
+                           </graphic>
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </GridPane>
+         </center>
+      </BorderPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="73.0" prefWidth="753.0" style="-fx-background-color: #d3d3d3;" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar layoutY="8.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <HBox alignment="CENTER" layoutY="23.0" prefHeight="50.0" prefWidth="753.0" styleClass="navbar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="23.0">
+               <children>
+                  <JFXToggleNode fx:id="homeBtn" graphicTextGap="10.0" prefHeight="50.0" prefWidth="120.0" styleClass="navbar-btn" text="Home" textFill="#ffd900">
+                     <graphic>
+                        <FontAwesomeIcon fill="#ffd900" glyphName="HOME" glyphStyle="HOME" selectionEnd="0" selectionStart="0" size="30" styleClass="navbar-icon" text="" wrappingWidth="27.142857551574707" />
+                     </graphic>
+                     <selectedColor>
+                        <Color red="0.36000001430511475" green="0.1979999989271164" blue="0.09000000357627869" />
+                     </selectedColor>
+                     <unSelectedColor>
+                        <Color red="1.0" green="0.07407407462596893" blue="0.07407407462596893" opacity="0.0" />
+                     </unSelectedColor>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXToggleNode>
+                  <JFXToggleNode fx:id="invBtn" graphicTextGap="10.0" prefHeight="50.0" prefWidth="125.0" styleClass="navbar-btn" text="Inventory" textFill="#ffd900">
+                     <selectedColor>
+                        <Color red="0.36000001430511475" green="0.1979999989271164" blue="0.09000000357627869" />
+                     </selectedColor>
+                     <unSelectedColor>
+                        <Color red="1.0" green="0.07407407462596893" blue="0.07407407462596893" opacity="0.0" />
+                     </unSelectedColor>
+                     <graphic>
+                        <FontAwesomeIcon fill="#ffd900" glyphName="STACK_OVERFLOW" glyphStyle="ARCHIVE" size="30" styleClass="navbar-icon" />
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXToggleNode>
+                  <JFXToggleNode fx:id="statsBtn" graphicTextGap="10.0" prefHeight="50.0" prefWidth="125.0" styleClass="navbar-btn" text="Stats" textFill="#ffd900">
+                     <selectedColor>
+                        <Color red="0.36000001430511475" green="0.1979999989271164" blue="0.09000000357627869" />
+                     </selectedColor>
+                     <unSelectedColor>
+                        <Color red="1.0" green="0.07407407462596893" blue="0.07407407462596893" opacity="0.0" />
+                     </unSelectedColor>
+                     <graphic>
+                        <FontAwesomeIcon fill="#ffd900" glyphName="BAR_CHART" glyphStyle="YOUTUBE" size="28" styleClass="navbar-icon" />
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXToggleNode>
+                  <JFXToggleNode fx:id="staffsBtn" graphicTextGap="10.0" prefHeight="50.0" prefWidth="125.0" styleClass="navbar-btn" text="Staffs" textFill="#ffd900">
+                     <selectedColor>
+                        <Color red="0.36000001430511475" green="0.1979999989271164" blue="0.09000000357627869" />
+                     </selectedColor>
+                     <unSelectedColor>
+                        <Color red="1.0" green="0.07999999821186066" blue="0.07999999821186066" opacity="0.0" />
+                     </unSelectedColor>
+                     <graphic>
+                        <FontAwesomeIcon fill="#ffd900" glyphName="USERS" glyphStyle="USERS" size="30" styleClass="navbar-icon" />
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXToggleNode>
+                  <JFXToggleNode fx:id="transBtn" graphicTextGap="10.0" prefHeight="50.0" prefWidth="133.0" styleClass="navbar-btn" text="Transaction" textFill="#ffd900">
+                     <selectedColor>
+                        <Color red="0.36000001430511475" green="0.1979999989271164" blue="0.09000000357627869" />
+                     </selectedColor>
+                     <unSelectedColor>
+                        <Color red="1.0" green="0.07407407462596893" blue="0.07407407462596893" opacity="0.0" />
+                     </unSelectedColor>
+                     <graphic>
+                        <FontAwesomeIcon fill="#ffd900" glyphName="QRCODE" glyphStyle="USERS" size="30" styleClass="navbar-icon" />
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXToggleNode>
+                  <JFXToggleNode fx:id="optionBtn1" graphicTextGap="10.0" layoutX="673.0" layoutY="10.0" prefHeight="50.0" prefWidth="159.0" styleClass="navbar-btn" text="Notifications" textFill="#ffd900">
+                     <selectedColor>
+                        <Color red="0.3607843220233917" green="0.19607843458652496" blue="0.09019608050584793" />
+                     </selectedColor>
+                     <unSelectedColor>
+                        <Color red="1.0" green="0.07407407462596893" blue="0.07407407462596893" opacity="0.0" />
+                     </unSelectedColor>
+                     <graphic>
+                        <FontAwesomeIcon fill="#ffcf81" glyphName="BELL" glyphStyle="USERS" size="30" styleClass="navbar-icon" />
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXToggleNode>
+                  <JFXToggleNode fx:id="optionBtn" graphicTextGap="10.0" prefHeight="50.0" prefWidth="125.0" styleClass="navbar-btn" text="Options" textFill="#ffd900">
+                     <selectedColor>
+                        <Color red="0.36000001430511475" green="0.1979999989271164" blue="0.09000000357627869" />
+                     </selectedColor>
+                     <unSelectedColor>
+                        <Color red="1.0" green="0.07407407462596893" blue="0.07407407462596893" opacity="0.0" />
+                     </unSelectedColor>
+                     <graphic>
+                        <FontAwesomeIcon fill="#ffd900" glyphName="BARS" glyphStyle="USERS" size="30" styleClass="navbar-icon" />
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXToggleNode>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
